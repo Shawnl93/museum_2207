@@ -5,6 +5,7 @@ class Museum
   def initialize(name)
     @name = name
     @exhibits = []
+
   end
 
   def add_exhibit(exhibits)
@@ -12,6 +13,8 @@ class Museum
   end
 
   def recommend_exhibits(patron)
-    require "pry"; binding.pry
+    patron.interests
+    # require "pry"; binding.pry
+
   end
 end

@@ -35,6 +35,7 @@ describe Museum do
     @patron_1.add_interest("Dead Sea Scrolls")
     @patron_1.add_interest("Gems and Minerals")
     @patron_2.add_interest("IMAX")
+    # require "pry"; binding.pry
     expect(@dmns.recommend_exhibits(@patron_1)).to eq([@dead_sea_scrolls, @gems_and_minerals])
   end
 
