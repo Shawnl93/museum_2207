@@ -10,4 +10,8 @@ class Museum
   def add_exhibit(exhibits)
     @exhibits << exhibits
   end
+
+  def recommend_exhibits(patron)
+    require "pry"; binding.pry
+  end
 end
